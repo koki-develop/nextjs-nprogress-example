@@ -5,7 +5,9 @@ import { useCallback, useEffect } from "react";
 import "nprogress/nprogress.css";
 import "../styles/globals.css";
 
-nProgress.configure({});
+nProgress.configure({
+  showSpinner: false,
+});
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
