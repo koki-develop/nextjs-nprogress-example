@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Page.module.css";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -14,11 +14,11 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Home</h1>
+        <h1 className={styles.title}>About</h1>
 
         <p className={styles.description}>
-          <Link href="/about">
-            <a>About</a>
+          <Link href="/">
+            <a>Home</a>
           </Link>
         </p>
       </main>
@@ -39,4 +39,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default About;
